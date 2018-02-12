@@ -15,6 +15,7 @@
 		B2BA35FF2031C19E00A22C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2BA35FD2031C19E00A22C4F /* LaunchScreen.storyboard */; };
 		B2BA360A2031C19F00A22C4F /* FancyDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA36092031C19F00A22C4F /* FancyDeskTests.swift */; };
 		B2BA36152031C19F00A22C4F /* FancyDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA36142031C19F00A22C4F /* FancyDeskUITests.swift */; };
+		B2BA36242031C90A00A22C4F /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA36232031C90A00A22C4F /* UIViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B2BA36102031C19F00A22C4F /* FancyDeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyDeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA36142031C19F00A22C4F /* FancyDeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyDeskUITests.swift; sourceTree = "<group>"; };
 		B2BA36162031C19F00A22C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BA36232031C90A00A22C4F /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B2BA35F02031C19E00A22C4F /* FancyDesk */,
+				B2BA36222031C83C00A22C4F /* Resources */,
 				B2BA36082031C19F00A22C4F /* FancyDeskTests */,
 				B2BA36132031C19F00A22C4F /* FancyDeskUITests */,
 				B2BA35EF2031C19E00A22C4F /* Products */,
@@ -126,6 +129,14 @@
 				B2BA36162031C19F00A22C4F /* Info.plist */,
 			);
 			path = FancyDeskUITests;
+			sourceTree = "<group>";
+		};
+		B2BA36222031C83C00A22C4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2BA36232031C90A00A22C4F /* UIViewX.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BA35F42031C19E00A22C4F /* ViewController.swift in Sources */,
+				B2BA36242031C90A00A22C4F /* UIViewX.swift in Sources */,
 				B2BA35F22031C19E00A22C4F /* AppDelegate.swift in Sources */,
 				B2BA35FA2031C19E00A22C4F /* FancyDesk.xcdatamodeld in Sources */,
 			);

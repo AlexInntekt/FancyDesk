@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancyDesk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w1" translatesAutoresizingMaskIntoConstraints="NO" id="69D-vv-i9l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lk-YI-DDy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="0.62671232876712324" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-M8-6jh" customClass="UIViewX" customModule="FancyDesk" customModuleProvider="target">
+                                <rect key="frame" x="121" y="300.5" width="133" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUy-tc-VN1">
+                                        <rect key="frame" x="6.5" y="2.5" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XUy-tc-VN1" secondAttribute="height" multiplier="2:1" id="MdG-Wu-KsK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="0.71572666952054798" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMD-WA-w9p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="0.72942529965753422" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XUy-tc-VN1" firstAttribute="centerX" secondItem="etZ-M8-6jh" secondAttribute="centerX" id="9J8-Tf-llM"/>
+                                    <constraint firstAttribute="width" secondItem="etZ-M8-6jh" secondAttribute="height" multiplier="2" id="Lym-yh-EPG"/>
+                                    <constraint firstItem="XUy-tc-VN1" firstAttribute="centerY" secondItem="etZ-M8-6jh" secondAttribute="centerY" id="mJO-Kj-DwO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="69D-vv-i9l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0n4-My-7vi"/>
+                            <constraint firstAttribute="trailing" secondItem="2Lk-YI-DDy" secondAttribute="trailing" id="4gN-9X-r8X"/>
+                            <constraint firstItem="2Lk-YI-DDy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Vz-pj-jKB"/>
+                            <constraint firstItem="etZ-M8-6jh" firstAttribute="centerX" secondItem="69D-vv-i9l" secondAttribute="centerX" id="GcV-D9-hd7"/>
+                            <constraint firstItem="etZ-M8-6jh" firstAttribute="centerY" secondItem="69D-vv-i9l" secondAttribute="centerY" id="K0B-mN-Vvr"/>
+                            <constraint firstItem="2Lk-YI-DDy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cip-rp-GwR"/>
+                            <constraint firstItem="etZ-M8-6jh" firstAttribute="height" secondItem="69D-vv-i9l" secondAttribute="height" multiplier="0.1" id="gml-Au-ecT"/>
+                            <constraint firstAttribute="trailing" secondItem="69D-vv-i9l" secondAttribute="trailing" id="hBB-CP-gli"/>
+                            <constraint firstItem="2Lk-YI-DDy" firstAttribute="height" secondItem="69D-vv-i9l" secondAttribute="height" multiplier="0.08" id="mGY-vM-gRf"/>
+                            <constraint firstItem="69D-vv-i9l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pFo-xO-D5x"/>
+                            <constraint firstAttribute="bottom" secondItem="69D-vv-i9l" secondAttribute="bottom" id="pxH-qJ-FSk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="2Lk-YI-DDy" id="3KQ-bP-6gl"/>
+                        <outlet property="headerViewHeight" destination="mGY-vM-gRf" id="Jv8-C2-BMm"/>
+                        <outlet property="startButton" destination="XUy-tc-VN1" id="4sL-at-wGS"/>
+                        <outlet property="viewX" destination="etZ-M8-6jh" id="GqD-Df-TiS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="w1" width="4256" height="2832"/>
+    </resources>
 </document>
