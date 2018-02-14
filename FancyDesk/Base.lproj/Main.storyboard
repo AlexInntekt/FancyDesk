@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="0.62671232876712324" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-M8-6jh" customClass="UIViewX" customModule="FancyDesk" customModuleProvider="target">
-                                <rect key="frame" x="121" y="300.5" width="133" height="66.5"/>
+                                <rect key="frame" x="121" y="533.5" width="133" height="66.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUy-tc-VN1">
                                         <rect key="frame" x="6.5" y="2.5" width="120" height="60"/>
@@ -63,7 +63,7 @@
                             <constraint firstAttribute="trailing" secondItem="2Lk-YI-DDy" secondAttribute="trailing" id="4gN-9X-r8X"/>
                             <constraint firstItem="2Lk-YI-DDy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Vz-pj-jKB"/>
                             <constraint firstItem="etZ-M8-6jh" firstAttribute="centerX" secondItem="69D-vv-i9l" secondAttribute="centerX" id="GcV-D9-hd7"/>
-                            <constraint firstItem="etZ-M8-6jh" firstAttribute="centerY" secondItem="69D-vv-i9l" secondAttribute="centerY" id="K0B-mN-Vvr"/>
+                            <constraint firstItem="etZ-M8-6jh" firstAttribute="centerY" secondItem="69D-vv-i9l" secondAttribute="centerY" multiplier="1.7" id="K0B-mN-Vvr"/>
                             <constraint firstItem="2Lk-YI-DDy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cip-rp-GwR"/>
                             <constraint firstItem="etZ-M8-6jh" firstAttribute="height" secondItem="69D-vv-i9l" secondAttribute="height" multiplier="0.1" id="gml-Au-ecT"/>
                             <constraint firstAttribute="trailing" secondItem="69D-vv-i9l" secondAttribute="trailing" id="hBB-CP-gli"/>
